@@ -1,0 +1,15 @@
+// The game title; will be referenced by the engine
+title "Starter Dungeon"
+
+// The Introduction to be shown before the actual game starts
+intro "Welcome! I'm your humble guide. I'm just a lowly bard though\n
+so don't expect much help. You're practically as good as alone.\n
+Basically all I have is knowledge of how you got here and a knack\n
+for narrating your life.\n
+Anyway, let's start. After fidling with a cursed looking rabbit in\n
+woods that definitely had a \"keep out\" sign. ... Yes they did.\n
+You find yourself transported to what you are soon to learn is a\n
+magical realm. Adventure awaits!\n\n"
+
+// The prompt text for user input at the end of each turn add as many as you want, the default is "Make a choice"
+prompt "What will you do?" "What next?" "What do you do?" "What now?" "Your choice?"

@@ -1,0 +1,5 @@
+description "You find yourself in another, larger stone chamber. This one's a bit more cob-webby. There's a door to the east and a hallway to the west."
+
+south "move" {0, 0, 1}
+east "move" {0, 1, 1}
+west "move" {0, -1, 1}
