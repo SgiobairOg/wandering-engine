@@ -1,0 +1,48 @@
+{
+  "description": "You find yourself alone in a stone chamber. Well, I'm here too but like I said, not helping. There is a door in the north end of the room.",
+  "north": {
+    "action": "move",
+    "input": {
+      "x": 1,
+      "y": 0,
+      "z": 1
+    }
+  },
+  "south": {
+    "action": "dialog",
+    "input": "That's a wall."
+  },
+  "east": {
+    "action": "dialog",
+    "input": "You find a wall. Lovely stone and moss wall."
+  },
+  "west": {
+    "action": "dialog",
+    "input": "You're looking at a wall... and a rather annoyed spider."
+  },
+  "up": {
+    "action": "dialog",
+    "input": "We call that a ceiling, it's a ways up there though."
+  },
+  "down": {
+    "action": "dialog",
+    "input": "Despite your best efforts you fail to phase through the floor."
+  },
+
+  "inventory": [
+    {
+      "id": 0,
+      "name": "a strange note",
+      "description": "It's a note written in a language unknown to you.\nYour best guess to its meaning is \"Cats fear pickles\" but\nthat's nonsense. Why would you even think that?",
+      "infinite": true,
+      "transferable": true
+    },
+    {
+      "id": 1,
+      "name": "a tarnished coin",
+      "description": "Well that's not worth much. Round though. 'Marui' one might say.",
+      "infinite": true,
+      "transferable": true
+    }
+  ]
+}

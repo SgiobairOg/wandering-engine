@@ -1,11 +1,13 @@
 {
   "name": "wandering-engine",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Command line text-based game engine",
   "main": "dist/bin.js",
   "scripts": {
-    "build": "npx tsc",
-    "develop": "nodemon --exec \"npm run build && ./dist/bin.js\"",
+    "build": "npm run clean && npx tsc && npm run copy-assets",
+    "clean": "rimraf dist/",
+    "copy-assets": "copyfiles -u 1 \"src/**/*.json\" \"src/**/*.kdl\" dist/",
+    "develop": "nodemon --exec \"npm run build && chmod +x ./dist/bin.js && ./dist/bin.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aoibhe Wilson <aoibhe@wilsons.io>",
@@ -13,14 +15,19 @@
   "devDependencies": {
     "@tsconfig/node16": "^1.0.2",
     "@types/node": "^17.0.36",
+    "@types/prompts": "^2.0.14",
+    "copyfiles": "^2.4.1",
     "nodemon": "^2.0.16",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.8.0",
     "typescript": "^4.7.2"
   },
   "dependencies": {
     "cli-format": "^3.0.9",
+    "colors": "^1.4.0",
     "conf": "^10.1.2",
     "json-schema-typed": "^8.0.1",
-    "kdljs": "^0.1.4"
+    "kdljs": "^0.1.4",
+    "prompts": "^2.4.2"
   }
 }

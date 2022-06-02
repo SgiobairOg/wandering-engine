@@ -3,5 +3,5 @@
     "src/",
     "test/"
   ],
-  "ext": "ts,json,md"
+  "ext": "ts,json,md,kdl"
 }

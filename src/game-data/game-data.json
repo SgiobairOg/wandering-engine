@@ -1,0 +1,14 @@
+{
+  "title": "Starter Dungeon with... Fred",
+  "dialog": {
+    "intro": "Welcome! I'm your humble guide. I'm just a lowly bard though so don't expect much help. You're practically as good as alone. Basically all I have is knowledge of how you got here, a knack for narrating your life, and gobs of free time.\n\nAnyway, let's start. After fidling with a cursed looking rabbit in woods that definitely had a \"keep out\" sign-\n\n...\n\nYes, they did. There was at least one sign.\n\n*ahem* You find you have been transported to what you are soon to learn is a magical realm. Adventure awaits!",
+    "prompt": [
+      "What will you do?",
+      "What next?",
+      "What do you do?",
+      "What now?",
+      "Your choice?"
+    ]
+  },
+  "debug": true
+}
