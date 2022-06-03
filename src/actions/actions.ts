@@ -43,7 +43,11 @@ export function getActions() {
 
   async function createMove(newCoordinates: RoomCoordinates | null, direction: MoveDirection): Promise<void> {
     if(!newCoordinates) {
+      output(`No coordinates provided for move to ${direction}`, "error");
       newCoordinates = getNewRoomCoordinates(direction);
+      output(`Created new coordinates: ${JSON.stringify(newCoordinates)}`, "error");
+    } else {
+      output(`New coordinates provided by input: ${JSON.stringify(newCoordinates)}`, "error");
     }
     await move(newCoordinates);
   }
@@ -59,7 +63,7 @@ export function getActions() {
       move: createMove,
       dialog: dialog,
     }
-    
+
     return actionPaths[actionData?.action || "move"](actionData?.input || null, direction);
   }
 

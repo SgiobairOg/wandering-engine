@@ -1,0 +1,16 @@
+{
+  "description": "You're in a long, empty hallway; not much going on here. There's an archway at the far end; it looks foggy? Shouldn't be foggy inside. That's weird.",
+  "north": {
+    "action": "move"
+  },
+  "south": {
+    "action": "dialog",
+    "input": "Another lovely stone wall. Nothing out of the ordinary here... unless you're interested in the deep scratches in the stone that spell out \"Beware the Eternal Fog\" and ooze what I sure hope is water. Eerie. Not sure if you should go back to the previous room or continue on."
+  },
+  "east": {
+    "action": "move"
+  },
+  "west": {
+    "action": "move"
+  }
+}

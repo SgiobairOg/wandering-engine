@@ -1,27 +1,12 @@
 {
   "description": "You find yourself in another, larger stone chamber. This one's a bit more cob-webby. There's a door to the east and a hallway to the west.",
   "south": {
-    "action": "move",
-    "input": {
-      "x": 0,
-      "y": 0,
-      "z": 1
-    }
+    "action": "move"
   },
   "east": {
-    "action": "move",
-    "input": {
-      "x": 0,
-      "y": 1,
-      "z": 1
-    }
+    "action": "move"
   },
   "west": {
-    "action": "move",
-    "input": {
-      "x": 0,
-      "y": -1,
-      "z": 1
-    }
+    "action": "move"
   }
 }

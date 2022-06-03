@@ -101,7 +101,13 @@ export function createRoomData() {
 
     if (!rooms[roomId]) {
       // attempt to load room data from rooms
-      currentRoom = await getRoom(room)
+      const roomData = await getRoom(room)
+      if(roomData) {
+        currentRoom = roomData;
+      } else {
+        // There's no room for those coordinates
+        return null;
+      }
     } else {
       currentRoom = rooms[roomId];
     }
